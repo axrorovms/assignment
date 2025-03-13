@@ -4,11 +4,11 @@ import os
 import time
 
 # Constants
-DATASET_PATH = "dataset/"  # Folder where images are stored
+DATASET_PATH = "dataset/Muhammadsodik"  # Folder where images are stored
 IMAGE_SIZE = (100, 100)    # Resize all images to 100x100
 MODEL_PATH = "face_model.yml"  # Trained model file
 WINDOW_SIZE = (800, 600)  # Window size for displaying the image
-CONFIDENCE_THRESHOLD = 0.00  # Minimum confidence to recognize a face
+CONFIDENCE_THRESHOLD = 0.61  # Minimum confidence to recognize a face
 
 # Load dataset and preprocess
 def load_images(path):
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     training_end_time = time.time()
     print(f"Model trained in {training_end_time - training_start_time:.4f} seconds.")
 
-    test_image_path = ".\Rotation\Steve_Mould.png"
+    test_image_path = input("input the path of the img: ")
     recognize_face_from_image(test_image_path, recognizer, label_dict)
 
     total_end_time = time.time()
