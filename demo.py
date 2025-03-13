@@ -4,7 +4,7 @@ import os
 import time
 
 # Constants
-DATASET_PATH = "dataset/Muhammadsodik"  # Folder where images are stored
+DATASET_PATH = "dataset/"  # Folder where images are stored
 IMAGE_SIZE = (100, 100)    # Resize all images to 100x100
 MODEL_PATH = "face_model.yml"  # Trained model file
 WINDOW_SIZE = (800, 600)  # Window size for displaying the image
